@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+}
+
+body {
+  background-color: pink;
+  font-family: "LOVE", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heart-alone {
+  font-size: 200px;
+  color: #e00;
+  animation: beat 0.6s infinite alternate;
+  transform-origin: center;
+}
+
+.heart-with-her {
+  font-size: 200px;
+  color: #e00;
+  animation: beat 0.25s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes "beat" {
+  to {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+}
+
+@-moz-keyframes beat {
+  to {
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+}
+
+@-webkit-keyframes "beat" {
+  to {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+}
+
+@-ms-keyframes "beat" {
+  to {
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+}
+
+@-o-keyframes "beat" {
+  to {
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+}
